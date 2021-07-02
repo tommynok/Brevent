@@ -174,9 +174,9 @@
     <string name="brevent_timeout_5min"> 5 минут</string>
     <string name="brevent_timeout_15min">15 минут</string>
     <string name="brevent_timeout_30min">30 минут</string>
-    <string name="brevent_timeout_1hour">1 час</string>
-    <string name="brevent_timeout_3hour">3 часа</string>
-    <string name="brevent_timeout_6hour">6 часов</string>
+    <string name="brevent_timeout_1hour">1 ч.</string>
+    <string name="brevent_timeout_3hour">3 ч.</string>
+    <string name="brevent_timeout_6hour">6 ч.</string>
     <string name="brevent_timeout_long">очень долго</string>
     <string name="brevent_standby_timeout">Тайм-аут неактивности</string>
     <string name="brevent_standby_timeout_label">Принудительно останавливать приложения, которые были неактивны в течение %1$s</string>
@@ -241,7 +241,7 @@
     <string name="brevent_about_developer">Для разработчиков</string>
     <string name="brevent_about_developer_adb">\"Отладка по USB\" включена</string>
     <string name="brevent_about_developer_adb_v26" />
-    <string name="brevent_about_translation">Переводы</string>
+    <string name="brevent_about_translation">Перевод</string>
     <string name="brevent_about_translator">tommynok</string>
     <string name="brevent_about_licenses">Лицензии</string>
 
@@ -338,7 +338,7 @@
     <string name="version_unlimited_tip">@string/payment</string>
     <string name="version_pro">Pro версия</string>
     <string name="version_pro_tip">Наслаждайтесь Android с Brevent</string>
-    <string name="version_contributor">Участник</string>
+    <string name="version_contributor">Участник проекта</string>
     <string name="version_contributor_tip">Наслаждайтесь Brevent с Android</string>
 
     <string name="version_feizhi">Feizhi</string>
@@ -406,5 +406,6 @@
     <string name="battery_time">Время работы от батареи: %s.</string>
     <string name="battery_time_short">Время работы от батареи менее 1 минуты.</string>
     <string name="battery_system">Настройки батареи</string>
+
 
 </resources>
