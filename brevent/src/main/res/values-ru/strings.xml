@@ -28,7 +28,9 @@
 
     <string name="brevent_service_start">Пожалуйста, запустите сервер Brevent (%s)</string>
     <string name="brevent_service_no_response">Сервер Brevent не  отвечает (%s)</string>
-    <string name="brevent_service_guide">1. Включите \"Для разработчиков\", включите \"Отладку по USB\" %1$s\n\n2. Подключитесь к ПК через USB %2$s\n\n3. Посетите https://brevent.sh с помощью Chrome на вашем ПК\n\nИли\n\nВыполните в командной строке ПК "%3$s"</string>
+    <string name="brevent_service_guide">1. Включите \"Для разработчиков\", включите \"Отладку по USB\" %1$s\n\n2. Подключитесь к ПК через USB %2$s\n\n3. Посетите brevent.sh с помощью Chrome на вашем ПК\n\nИли\n\nВыполните в командной строке ПК \"%3$s\"</string>
+    <string name="brevent_service_guide_webadb">1. Включите \"Для разработчиков\", включите \"Отладку по USB\" %1$s\n\n2. Подключитесь к ПК через USB %2$s\n\n3. Посетите brevent.sh с помощью Chrome на вашем ПК</string>
+    <string name="brevent_service_guide_adb_wifi">Ваше устройство поддерживает \"Беспроводную отладку\".\n\n1. Включите \"Для разработчиков\", включите \"Беспроводную отладку\" %1$s\n\n2. нажмите \"Порт беспроводной отладки\"</string>
     <string name="brevent_service_guide_root">Кажется, что ваше устройство рутировано. Вы можете включить сеть ADB вручную или попробовать нажать кнопку \"Root\" в Brevent.\n\nRoot не требуется для Brevent и требует оплаты.</string>
     <string name="brevent_service_guide_adb">Сеть ADB включена, нажмите \"ADB\", чтобы запустить Brevent сервер.</string>
     <string name="brevent_service_payment_root">Для Brevent root не нужен и требует оплаты.</string>
@@ -37,7 +39,6 @@
     <string name="brevent_service_command_copied">Команда скопирована: %s</string>
     <string name="brevent_service_adb_running">(Включено)</string>
     <string name="brevent_service_usb_connected">(USB подключен)</string>
-    <string name="brevent_service_hard" />
     <string name="brevent_service_success">Сервер Brevent успешно запущен. Пожалуйста, нажимайте на иконки приложений для их блокировки.</string>
     <string name="brevent_service_mocked">Сервер Brevent не запущен. Brevent находится в режиме только чтение.</string>
     <string name="brevent_service_mock">Режим только чтение</string>
@@ -74,8 +75,9 @@
     <string name="process_service_cached" tools:ignore="PluralsCandidate">%d cached service</string>
     <string name="process_total">всего %d</string>
     <plurals name="process_process">
-        <item quantity="one">&#160;process</item>
-        <item quantity="other">&#160;processes</item>
+        <item quantity="one" tools:ignore="ImpliedQuantity">&#160;process</item>
+        <item quantity="few">&#160;processes</item>
+        <item quantity="many">&#160;processes</item>
     </plurals>
 
     <string name="action_brevent">Заблокировать</string>
@@ -142,7 +144,7 @@
     <string name="menu_sort_by_apk_size">Размер АРК (Pro)</string>
     <string name="menu_sort_by_avg_mem">Среднее использование памяти (Pro)</string>
     <string name="menu_sort_by_max_mem">Максимальное использование памяти (Pro)</string>
-    <string name="menu_feedback">Обратная связь</string>
+    <string name="menu_feedback">Контакты</string>
     <string name="menu_settings">Настройки</string>
     <string name="menu_template">Шаблон</string>
     <string name="menu_guide">Справка</string>
@@ -150,8 +152,8 @@
     <string name="menu_command">Выполнение команд</string>
     <string name="menu_brevent">Запуск Brevent</string>
 
-    <string name="feedback_message">Не стесняйтесь присылать отзывы.\n\nЕсли у вас есть аккаунт GitHub, создайте вопрос по проблеме; вы также можете просматривать уже открытые вопросы по проблеме.%s</string>
-    <string name="feedback_message_email">\n\nДля личных сообщений напишите мне на электронную почту.</string>
+    <string name="feedback_message">Не стесняйтесь обращаться к нам.\n\nEmail: brevent@jianyu.io\n\nЕсли у вас есть аккаунт GitHub, создайте вопрос по проблеме; вы также можете просматривать уже открытые вопросы по проблеме.%s</string>
+    <string name="feedback_message_email">\n\nДля личных сообщений напишите нам на email.</string>
     <string name="feedback_github">GitHub</string>
     <string name="feedback_email">Email</string>
     <string name="feedback_logs">Логи</string>
@@ -205,10 +207,10 @@
     <string name="show_payment_play">Спасибо за покупку %s Brefoil через Play Store</string>
     <string name="show_payment_rmb">Спасибо за покупку %1s Brefoil</string>
     <string name="show_payment_contributor">Спасибо за бесценный вклад в Brevent</string>
-    <string name="show_payment_play_and_rmb">Спасибо за покупку %s Brefoil через Play Store, %2$s Brefoil не через Play Store</string>
+    <string name="show_payment_play_and_rmb">Спасибо за покупку %1$s Brefoil через Play Store, %2$s Brefoil не через Play Store</string>
     <string name="show_payment_play_and_contributor">Спасибо за покупку %s Brefoil через Play Store и за бесценный вклад в Brevent</string>
     <string name="show_payment_rmb_and_contributor">Спасибо за покупку %s Brefoil и за бесценный вклад в Brevent</string>
-    <string name="show_payment_play_and_rmb_and_contributor">Спасибо за покупку %s Brefoil через Play Store, %2$s Brefoil не через Play Store и за бесценный вклад в Brevent</string>
+    <string name="show_payment_play_and_rmb_and_contributor">Спасибо за покупку %1$s Brefoil через Play Store, %2$s Brefoil не через Play Store и за бесценный вклад в Brevent</string>
     <string name="brevent_appops">App ops</string>
     <string name="brevent_appops_label">Будьте осторожны, это может привести к сбою приложений</string>
     <string name="brevent_disable">Отключить приложения</string>
@@ -240,7 +242,7 @@
     <string name="brevent_about_developer_adb">\"Отладка по USB\" включена</string>
     <string name="brevent_about_developer_adb_v26" />
     <string name="brevent_about_translation">Переводы</string>
-    <string name="brevent_about_translator">DKOUT, Aviraxp, Li Yufan, TacoTheDank, Késmárky Tímea</string>
+    <string name="brevent_about_translator">tommynok</string>
     <string name="brevent_about_licenses">Лицензии</string>
 
     <string name="unsupported_owner">Brevent доступен только для владельца.</string>
@@ -302,15 +304,13 @@
     <string name="normaled_app">Отмена "%1$s"</string>
     <string name="normaled_app_fail">Сбой отмены "%1$s", запустите Brevent</string>
     <string name="recommend_unbrevent_app">Рекомендуется разблокировка \"%1$s\"</string>
-    <string name="recommend_unbrevent_app_detail">Рекомендуется разблокировать "%1$s"</string>
+    <string name="recommend_unbrevent_app_detail">Заблокировано %1$d раз за %2$s, нажмите чтоб разблокировать.</string>
     <string name="recommend_disable_app">Рекомендуется отключить "%1$s"</string>
     <string name="recommend_disable_app_detail">Заблокировано %1$d раз в %2$s, нажмите, чтоб отключить.</string>
     <string name="disabled_app">Отключено "%1$s"</string>
     <string name="disabled_app_fail">Сбой отключения "%1$s", запустите Brevent</string>
 
     <string name="notification_brevent_server">Сервер Brevent</string>
-    <string name="notification_auto_brevent" translatable="false">@string/brevent_auto_update</string>
-    <string name="notification_auto_aggressive" translatable="false">@string/brevent_auto_aggressive</string>
     <string name="notification_auto_unbrevent">Автоматическая разблокировка</string>
 
     <string name="cmd_menu_reset">Сброс</string>
@@ -385,12 +385,15 @@
     <string name="adb_wifi_port">Порт беспроводной отладки</string>
     <string name="adb_wifi_port_tip">Пожалуйста, выключите/включите беспроводную отладку до автоматического обнаружения порта.</string>
     <string name="adb_wifi_error_connect">Не удается подключиться, проверьте порт.</string>
-    <string name="adb_wifi_certificate_unknown">Выполните сопряжение через https://brevent.sh.</string>
     <string name="adb_wifi_unsupported">Беспроводная отладка не поддерживается.</string>
     <string name="adb_wifi_pair">Беспроводное сопряжение</string>
-    <string name="adb_wifi_pair_port">Порт беспроводного сопряжения</string>
-    <string name="adb_wifi_pair_code">Код беспроводного сопряжения</string>
-    <string name="adb_wifi_pair_tip">Пожалуйста, используйте режим разделенного экрана, чтобы избежать сбоя сопряжения.</string>
+    <string name="adb_wifi_pair_code">Шестизначный код</string>
+    <string name="adb_wifi_pair_code_reply">Пожалуйста, ответьте шестизначным кодом.</string>
+    <string name="adb_wifi_pairing">Беспроводное сопряжение</string>
+    <string name="adb_wifi_pair_success">Сопряжено</string>
+    <string name="adb_wifi_pair_fail">Сбой беспроводного сопряжения</string>
+    <string name="adb_wifi_pair_https">Посетите brevent.sh с помощью Chrome на вашем ПК для сопряжения.</string>
+    <string name="adb_wifi_pair_guide">Нажмите \"Беспроводное сопряжение\", перейдите к \"Беспроводная отладка\", затем нажмите \"Сопряжение устройства с кодом сопряжения\", ответьте на уведомление Brevent шестизначным кодом.</string>
 
     <string name="about_detail">@string/about_detail_en</string>
     <string name="charging">Зарядка</string>
